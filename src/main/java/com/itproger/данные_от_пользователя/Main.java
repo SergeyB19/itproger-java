@@ -1,4 +1,4 @@
-package com.itproger.Данные_от_пользователя;
+package com.itproger.данные_от_пользователя;
 
 import java.util.Scanner;
 
