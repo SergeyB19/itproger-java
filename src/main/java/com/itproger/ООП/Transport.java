@@ -6,6 +6,18 @@ public class Transport {
     public String color;
     public byte[] coordinate;
 
+    public Transport() {
+        System.out.println("Object created");
+    }
+    public Transport(float speed, int weight, String color, byte[] coordinate) {
+        this.speed = speed;
+        this.weight = weight;
+        this.color = color;
+        this.coordinate = coordinate;
+    }
+
+
+
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate) {
         speed = _speed;
         weight = _weight;
