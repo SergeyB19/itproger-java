@@ -3,12 +3,18 @@ package com.itproger.ООП;
 public class Transport {
     public float speed;
     public int weight;
-    public String color;
+    protected String color;
     public byte[] coordinate;
 
     public Transport() {
         System.out.println("Object created");
     }
+
+    public Transport(int weight, byte[] coordinate) {
+        this.weight = weight;
+        this.coordinate = coordinate;
+    }
+
     public Transport(float speed, int weight, String color, byte[] coordinate) {
         this.speed = speed;
         this.weight = weight;
