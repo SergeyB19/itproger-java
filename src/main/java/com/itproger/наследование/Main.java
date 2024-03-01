@@ -8,5 +8,7 @@ public class Main {
 
         truck.setLoaded(true);
         truck.getLoaded();
+        truck.setValues(250.5f, 2500, "White", new byte[]{0, 0, 0});
+        truck.getValues();
     }
 }

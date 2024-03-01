@@ -15,6 +15,17 @@ public class Truck extends Transport {
         this.isLoaded = isLoaded;
     }
 
+    @Override
+    public void setValues(float _speed, int _weight, String _color, byte[] _coordinate) {
+        super.setValues(_speed, _weight, _color, _coordinate);
+        System.out.println("Наш второй метод");
+    }
+
+    @Override
+    public String getValues() {
+        return super.getValues();
+    }
+
     private boolean isLoaded;
 
     public void setLoaded(boolean loaded) {
