@@ -3,7 +3,12 @@ package com.itproger.ООП;
 public class Main {
     public static void main(String[] args) {
         //ООП: классы и объекты
-        Transport bmw = new Transport();
+        Transport bmw = new Transport() {
+            @Override
+            public void moveObject(float speed) {
+
+            }
+        };
         bmw.setValues(250.0f, 2500, "White", new byte[]{0, 0, 0});
         String res1 = bmw.getValues();
         System.out.println(res1);
@@ -12,7 +17,12 @@ public class Main {
         bmw.color = "White";
         bmw.coordinate = new byte[]{0, 0, 0};
 
-        Transport truck = new Transport();
+        Transport truck = new Transport() {
+            @Override
+            public void moveObject(float speed) {
+
+            }
+        };
         truck.speed = 140.5f;
         truck.weight = 5600;
         truck.color = "Red";

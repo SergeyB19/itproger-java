@@ -1,6 +1,6 @@
 package com.itproger.ООП;
 
-public class Transport {
+public abstract class Transport {
     public float speed;
     public int weight;
     protected String color;
@@ -9,6 +9,8 @@ public class Transport {
     public Transport() {
         System.out.println("Object created");
     }
+
+    public abstract void moveObject(float speed);
 
     public Transport(int weight, byte[] coordinate) {
         this.weight = weight;
@@ -21,7 +23,6 @@ public class Transport {
         this.color = color;
         this.coordinate = coordinate;
     }
-
 
 
     public void setValues(float _speed, int _weight, String _color, byte[] _coordinate) {

@@ -5,6 +5,12 @@ import com.itproger.ООП.Transport;
 public class Truck extends Transport {
     public Truck() {
     }
+
+    @Override
+    public void moveObject(float speed) {
+        System.out.println("Наш объект двигается со скоростью " + speed);
+    }
+
     public Truck(int weight, byte[] coordinate) {
         super(weight, coordinate);
         System.out.println("Object created");
